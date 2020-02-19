@@ -1,8 +1,8 @@
 CONFIG_ENV_CFLAGS   += \
     -Os -Wall \
-    -g3 --coverage \
     -D_PLATFORM_IS_LINUX_ \
     -D__UBUNTU_SDK_DEMO__ \
+    -W1, -Bsymbolic \
 
 CONFIG_ENV_CFLAGS   += \
     -DWITH_MQTT_DYN_BUF=1 \
@@ -26,6 +26,8 @@ CONFIG_src/tools/linkkit_tsl_convert :=
 endif
 
 CONFIG_ENV_LDFLAGS  += -lpthread -lrt
+CONFIG_LIB_EXPORT := dynamic
+CROSS_PREFIX := arm-hisiv500-linux-
 
 
 
