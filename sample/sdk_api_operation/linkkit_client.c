@@ -78,7 +78,8 @@ static int user_service_request_handler(const int devid, const char *id, const i
 
     /* 部分物模型服务消息由LinkVisual处理，部分需要自行处理。 */
     int link_visual_process = 0;
-    for (unsigned int i = 0; i < sizeof(link_visual_service)/sizeof(link_visual_service[0]); i++) {
+    unsigned int i = 0;
+    for (i = 0; i < sizeof(link_visual_service)/sizeof(link_visual_service[0]); i++) {
         /* 这里需要根据字符串的长度来判断 */
         if (!strncmp(serviceid, link_visual_service[i], strlen(link_visual_service[i]))) {
             link_visual_process = 1;
@@ -291,7 +292,8 @@ int linkkit_client_start(const char *product_key,
     }
 
     /* 等待linkkit链接成功（demo做了有限时长的等待，实际产品中，可设置为在网络可用时一直等待） */
-    for(int i = 0; i < 100; i++) {
+    int i = 0;
+    for(i = 0; i < 100; i++) {
         if(!g_connect) {
             HAL_SleepMs(200);
         } else {
