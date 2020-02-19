@@ -1,3 +1,4 @@
+SET (CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/bin)
 if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
     MESSAGE (FATAL_ERROR "in-tree build not allowded")
 endif(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
@@ -5,9 +6,21 @@ endif(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
 CMAKE_MINIMUM_REQUIRED (VERSION 2.8)
 PROJECT (iotkit-embedded-V2.3.0 C)
 
+set(TOOLCHAINS_PREFIX "/opt/hisi-linux/x86-arm/arm-hisiv500-linux/target/bin/arm-hisiv500-linux-")
+set(CMAKE_CXX_COMPILER ${TOOLCHAINS_PREFIX}g++)
+set(CMAKE_C_COMPILER ${TOOLCHAINS_PREFIX}gcc)
+
 SET (EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 SET (LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 SET (CMAKE_C_FLAGS " -Iexamples -Iexamples/linkkit -Itests -Os -Wall -fPIC")
+
+set(SMARTLIVING_SDK_INC
+    ${CMAKE_SOURCE_DIR}/src/sdk-impl
+    ${CMAKE_SOURCE_DIR}/src/protocol/mqtt
+    ${CMAKE_SOURCE_DIR}/src/infra/log
+    ${CMAKE_SOURCE_DIR}/src/services/dev_diagnosis
+)
+include_directories(${SMARTLIVING_SDK_INC})
 
 IF (WIN32)
     SET (CMAKE_EXE_LINKER_FLAGS "-L${PROJECT_SOURCE_DIR}/prebuilt/win7/libs")
@@ -70,7 +83,7 @@ ADD_SUBDIRECTORY (src/services/linkkit/dm)
 ADD_SUBDIRECTORY (src/services/linkkit/dev_reset)
 ADD_SUBDIRECTORY (src/protocol/coap/local)
 ADD_SUBDIRECTORY (src/services/awss)
-ADD_SUBDIRECTORY (src/services/timer_service)
+# ADD_SUBDIRECTORY (src/services/timer_service)
 ADD_SUBDIRECTORY (src/services/dev_diagnosis)
 ADD_SUBDIRECTORY (src/services/dev_bind)
 
@@ -90,7 +103,7 @@ ADD_LIBRARY (iot_sdk SHARED
     $<TARGET_OBJECTS:iot_reset>
     $<TARGET_OBJECTS:iot_coap_local>
     $<TARGET_OBJECTS:iot_awss>
-    $<TARGET_OBJECTS:iot_timer_service>
+#    $<TARGET_OBJECTS:iot_timer_service>
     $<TARGET_OBJECTS:iot_dev_diagnosis>
     $<TARGET_OBJECTS:iot_bind>
 )
