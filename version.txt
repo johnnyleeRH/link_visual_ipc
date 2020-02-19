@@ -1,0 +1,107 @@
+v1.1.12
+1. linkkit更新，包含重要更新：修复了图片发送速度过慢的bug
+2. 修复了小概率丢帧导致花屏的bug
+3. 其他SDK内部优化
+
+v1.1.11
+1. 优化了lv_post_alarm_image的内部逻辑，修复了部分异常情况下无法上报图片的bug
+2. 码流自检新增以下功能：码率计算、自动保存码流为文件（lv_config增加了相关选项）
+3. 修复了云转发包过慢时会错误关闭链接的bug
+4. 新增API:lv_control,用于测试过程中修改部分SDK的行为，如日志级别等。demo提供了示例：linkvisual_client_control_test
+5. demo删除了zlog相关示例代码,针对异常情况做了优化（已对接SDK的客户无需关心）
+
+v1.1.10
+1. 事件报警 lv_event_type_e 增加了更多的类型
+2. 更新了linkkit sdk
+3. 增加了按UTC时间点播（LV_STREAM_CMD_STORAGE_RECORD_BY_UTC_TIME）的功能，并修改了相应的头文件
+4. 修复了多处H265格式兼容的问题
+5. 修复了系统时间回退导致 lv_post_alarm_image 一直失败的bug
+6. 删除了已废弃的接口，lv_log_print/lv_get_version/lv_stream_force_stop
+
+v1.1.9
+1. 增加SDK设置日志打印函数的功能，并使用zlog作为demo演示
+2. linkkit更新，包含以下功能(可用官网上看到具体提交内容)：
+    c650ae68 [alcs] fix alcs auth always fail caused by prefix update problem
+    af1be537 [alcs] fix typo of extra character in alcs_adapter.c
+    7a291ce7 [alcs] fix typo around subdev list destroy
+    3f8209ac [awss] fix core-dump issue when the input QR code is wrong
+    ff6ae0b9 [infra] fix update device info with invalid message ID
+    953d3f7f [example] fix linkkit close failure while yield thread is still running
+    8a59c60e [hal] fix tls session ticket conflict between HTTP and MQTT servers
+    de71ee93 [sdk-impl] fix race condition between IOT_Linkkit_Yield and IOT_Linkkit_Close
+
+v1.1.8
+1. 重新整理demo，已对接旧版本SDK的开发者无需关心此处变更
+2. 增加音视频自检查模块，帮助开发者调试，可在lv_config_s中选择打开/关闭。
+3. 调整了lv_storage_record_type_e的枚举量值
+4. 增加lv_log_print，用于开发者打印LV格式的日志。
+5. LK代码更新。
+
+v1.1.7
+1. lv_stream_send_video中key_frame的类型由bool修改为int
+2. 优化弱网丢帧体验
+3. lv_config_s新增参数live_p2p_num/storage_record_source_num，用
+于设置直播分发限制、点播路数限制。
+4. 修复部分场景下AAC无法播放的问题
+5. linkkit的代码更新，修复配网、连接相关bug
+
+v1.1.6
+1. 修复云转和P2P的偶现花屏问题
+2. 修复H265的格式兼容问题
+3. 修复点播偶现收不到启动命令的问题
+4. 增加设备埋点功能
+5. 接口lv_get_version/lv_stream_force_stop将逐步废弃，不再建议开发者使用
+6. linkkit的代码更新，修复配网、连接等bug。
+7. 其他优化，如内存泄漏等
+
+v1.1.5
+1. 新增按月查询回调lv_query_storage_record_by_month_cb
+2. linkkit bug修复
+3. linkvisual 内部优化及bug修复
+
+v1.1.4
+1. linkkit bug修复。
+
+v1.1.3
+1. 内部bug修复
+
+v1.1.2
+1.删除按时间回放的定义LV_STREAM_CMD_STORAGE_RECORD_BY_TIME，相应对结构体lv_stream_param_s的定义进行了变更。
+现SDK完成时间向文件的转换,开发者只需要支持按文件点播的功能。
+2. 增加API lv_post_file_close。在卡录像点播场景下，推送完当前文件数据后，需要调用该API通知播放端。
+
+v1.1.1
+由于第三方库源码下载带来众多不稳定因素，影响调试进度，
+我们将直接提供源码压缩包
+
+v1.1.0
+1. 不再提供linkkit源码，而提供linkkit官方下载链接和LinkVisual基于此的补丁
+2. 在linkkit增加了LinkVisual自定义消息ITE_LINK_VISUAL，使用方式具体见linkkit_adapter.cpp的实现
+3. lv_voice_intercom_send_audio增加参数：@param [IN] timestamp:  音频帧时间戳，单位：ms
+4. linkkit_adapter_tsl_service改为接口lv_linkkit_adapter，并增加一个枚举量入参，
+LV_LINKKIT_ADAPTER_TYPE_TSL_SERVICE为原物模型属性，新增LV_LINKKIT_ADAPTER_TYPE_LINK_VISUAL用于处理linkvisual自定义消息，
+具体参考linkkit_adapter.cpp的实现
+5. 直播、点播支持H265(含加密)
+6. 删除demo对库iniparser的依赖，不影响SDK的集成
+7. lv_on_push_streaming_cmd_cb的时间戳参数由double改为unsigned int，单位为ms
+8. 其他SDK内部的优化
+
+v1.0.0
+1. Linkkit SDK和LinkVisual SDK分离，ISV需自行调试Linkkit代码（开源），并将物模型消息转交LinkVisual处理；
+删除了相关接口lv_set_property_cb/lv_set_service_cb/lv_post_property/lv_post_event，新增接口linkkit_adapter_tsl_service
+并提供示例代码：linkkit_adapter.cpp/h
+2. 将部分开源库包含如SDK中，目前SDK外的库为CJSON、Linkkit
+3. P2P功能优化
+
+v0.9.0
+1. 新增P2P功能
+
+V0.8.5
+接口信息：
+1. 增加接口lv_get_version，用于打印版本信息等
+2. 修改lv_start_push_streaming_cb入参形式，用于支持点播和直播
+3. 修改lv_tfcard_cmd_cb为lv_on_push_streaming_cmd_cb，用于统一下发直播、点播的控制命令
+4. 新增lv_voice_intercom_receive_metadata_cb，用于只是APP下发至设备的音频参数
+5. 修改lv_voice_intercom_receive_data_cb的参数，去除了时间戳等无用参数
+编译相关：
+1. 将SDK内部base64等实现抽成独立库，命令为lv_digest，方便后续替换厂商的库。

@@ -1,0 +1,7 @@
+video.format=h265
+video.fps=25
+audio.format=aac
+audio.sample_rate=8000
+audio.bits_per_sample=16
+audio.channel=1
+duration=331
