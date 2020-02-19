@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 2.8)
 
 # set default values, it will be replace by cmake command options:-D <var>:<type>=<value>
-set(TOOLCHAINS_PREFIX "" CACHE STRING "set the toolchain")
+set(TOOLCHAINS_PREFIX "/opt/hisi-linux/x86-arm/arm-hisiv500-linux/target/bin/arm-hisiv500-linux-")
 # set the root directions
 set(LV_SDK_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
 set(LV_BUILD_ROOT ${CMAKE_BINARY_DIR})
@@ -36,15 +36,15 @@ include_directories(${LV_CODE_INC})
 
 #---------------- ADD LIBS ---------------#
 # cjson
-add_library(cjson STATIC IMPORTED)
-set_target_properties(cjson PROPERTIES IMPORTED_LOCATION ${LV_SDK_ROOT}/third_party/cJSON-1.7.7/libcjson.a)
+add_library(cjson SHARED IMPORTED)
+set_target_properties(cjson PROPERTIES IMPORTED_LOCATION ${LV_SDK_ROOT}/third_party/cJSON-1.7.7/build/libcjson.so)
 # linkkit
-add_library(iot_hal STATIC IMPORTED)
-add_library(iot_sdk STATIC IMPORTED)
-add_library(iot_tls STATIC IMPORTED)
-set_target_properties(iot_hal PROPERTIES IMPORTED_LOCATION ${LV_SDK_ROOT}/third_party/linkkit-sdk-c/output/release/lib/libiot_hal.a)
-set_target_properties(iot_sdk PROPERTIES IMPORTED_LOCATION ${LV_SDK_ROOT}/third_party/linkkit-sdk-c/output/release/lib/libiot_sdk.a)
-set_target_properties(iot_tls PROPERTIES IMPORTED_LOCATION ${LV_SDK_ROOT}/third_party/linkkit-sdk-c/output/release/lib/libiot_tls.a)
+add_library(iot_hal SHARED IMPORTED)
+add_library(iot_sdk SHARED IMPORTED)
+add_library(iot_tls SHARED IMPORTED)
+set_target_properties(iot_hal PROPERTIES IMPORTED_LOCATION ${LV_SDK_ROOT}/third_party/linkkit-sdk-c/out/libiot_hal.so)
+set_target_properties(iot_sdk PROPERTIES IMPORTED_LOCATION ${LV_SDK_ROOT}/third_party/linkkit-sdk-c/out/libiot_sdk.so)
+set_target_properties(iot_tls PROPERTIES IMPORTED_LOCATION ${LV_SDK_ROOT}/third_party/linkkit-sdk-c/out/libiot_tls.so)
 # linkvisual
 add_library(link_visual_ipc_static STATIC IMPORTED)
 set_target_properties(link_visual_ipc_static PROPERTIES IMPORTED_LOCATION ${LV_SDK_ROOT}/linkvisual/liblink_visual_ipc.a)

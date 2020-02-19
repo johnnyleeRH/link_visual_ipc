@@ -12,6 +12,10 @@ set(CJSON_VERSION_SO 1)
 set(CJSON_UTILS_VERSION_SO 1)
 set(PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}")
 
+set(TOOLCHAINS_PREFIX "/opt/hisi-linux/x86-arm/arm-hisiv500-linux/target/bin/arm-hisiv500-linux-")
+set(CMAKE_CXX_COMPILER ${TOOLCHAINS_PREFIX}g++)
+set(CMAKE_C_COMPILER ${TOOLCHAINS_PREFIX}gcc)
+
 
 set(custom_compiler_flags)
 

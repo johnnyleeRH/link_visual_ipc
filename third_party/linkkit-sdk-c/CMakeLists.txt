@@ -3,10 +3,6 @@ if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
     MESSAGE (FATAL_ERROR "in-tree build not allowded")
 endif(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
 
-set(TOOLCHAINS_PREFIX "/opt/hisi-linux/x86-arm/arm-hisiv500-linux/target/bin/arm-hisiv500-linux-")
-set(CMAKE_CXX_COMPILER ${TOOLCHAINS_PREFIX}g++)
-set(CMAKE_C_COMPILER ${TOOLCHAINS_PREFIX}gcc)
-
 CMAKE_MINIMUM_REQUIRED (VERSION 2.8)
 PROJECT (iotkit-embedded-V2.3.0 C)
 
@@ -23,7 +19,9 @@ set(LINKKIT_SDK_INC
     ${CMAKE_SOURCE_DIR}/src/protocol/mqtt
 )
 include_directories(${LINKKIT_SDK_INC})
-
+set(TOOLCHAINS_PREFIX "/opt/hisi-linux/x86-arm/arm-hisiv500-linux/target/bin/arm-hisiv500-linux-")
+SET(CMAKE_CXX_COMPILER ${TOOLCHAINS_PREFIX}g++)
+SET(CMAKE_C_COMPILER ${TOOLCHAINS_PREFIX}gcc)
 MESSAGE ("---------------------------------------------------------------------")
 MESSAGE ("Project Name              : " ${PROJECT_NAME})
 MESSAGE ("Source Dir                : " ${PROJECT_SOURCE_DIR})
@@ -46,8 +44,8 @@ MESSAGE ("---------------------------------------------------------------------"
 
 ADD_DEFINITIONS (-DDLL_IOT_EXPORTS)
 
-ADD_DEFINITIONS (-DAWSS_DISABLE_ENROLLEE)
-ADD_DEFINITIONS (-DAWSS_DISABLE_REGISTRAR)
+#ADD_DEFINITIONS (-DAWSS_DISABLE_ENROLLEE)
+#ADD_DEFINITIONS (-DAWSS_DISABLE_REGISTRAR)
 ADD_DEFINITIONS (-DAWSS_SUPPORT_ADHA)
 ADD_DEFINITIONS (-DAWSS_SUPPORT_AHA)
 ADD_DEFINITIONS (-DAWSS_SUPPORT_APLIST)
