@@ -1,6 +1,11 @@
+SET (CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/bin)
 if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
     MESSAGE (FATAL_ERROR "in-tree build not allowded")
 endif(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
+
+set(TOOLCHAINS_PREFIX "/opt/hisi-linux/x86-arm/arm-hisiv500-linux/target/bin/arm-hisiv500-linux-")
+set(CMAKE_CXX_COMPILER ${TOOLCHAINS_PREFIX}g++)
+set(CMAKE_C_COMPILER ${TOOLCHAINS_PREFIX}gcc)
 
 CMAKE_MINIMUM_REQUIRED (VERSION 2.8)
 PROJECT (iotkit-embedded-V2.3.0 C)
@@ -13,6 +18,12 @@ IF (WIN32)
     SET (CMAKE_EXE_LINKER_FLAGS "-L${PROJECT_SOURCE_DIR}/prebuilt/win7/libs")
 ENDIF (WIN32)
 
+set(LINKKIT_SDK_INC
+    ${CMAKE_SOURCE_DIR}/src/sdk-impl
+    ${CMAKE_SOURCE_DIR}/src/protocol/mqtt
+)
+include_directories(${LINKKIT_SDK_INC})
+
 MESSAGE ("---------------------------------------------------------------------")
 MESSAGE ("Project Name              : " ${PROJECT_NAME})
 MESSAGE ("Source Dir                : " ${PROJECT_SOURCE_DIR})
@@ -23,6 +34,7 @@ MESSAGE ("C Compiler                : " ${CMAKE_C_COMPILER})
 MESSAGE ("Executable Dir            : " ${EXECUTABLE_OUTPUT_PATH})
 MESSAGE ("Library Dir               : " ${LIBRARY_OUTPUT_PATH})
 MESSAGE ("SDK Version               : " V2.3.0)
+MESSAGE ("Inc dirs                  : " ${LINKKIT_SDK_INC})
 MESSAGE ("")
 
 IF (WIN32)
