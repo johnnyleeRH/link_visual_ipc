@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="iotkit-embedded-V2.3.0" targetName="mqtt-example-multithread" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="iot_sdk" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="iot_system" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="iot_cm" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="linkkit-example-countdown" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="iot_tls" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="iot_dm" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="iot_hal" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="linkkit-example-cota" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="iot_mqtt" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="sdk_impl" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="iot_awss" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="iot_log" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="iot_bind" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="mqtt-example-rrpc" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="mqtt-example" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="iot_reset" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="linkkit-example-sched" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="iot_coap_local" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="ota-example-mqtt" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="iot_ota" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="linkkit-example-solo" />
+      <config projectName="iotkit-embedded-V2.3.0" targetName="iot_utils" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="04e603e6-5b4f-495d-af42-946de5cbaf2e" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/iot.mk">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="73" column="66" lean-forward="true" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/services/linkkit/dm/client/dm_client.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/protocol/mqtt/MQTTPacket/MQTTConnect.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1824">
+              <caret line="114" selection-start-line="114" selection-end-line="114" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ref-impl/hal/os/ubuntu/ieee80211_radiotap.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1008">
+              <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sdk-impl/impl_linkkit.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="678">
+              <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sdk-impl/sdk-impl.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3392">
+              <caret line="218" column="34" selection-start-line="218" selection-start-column="34" selection-end-line="218" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/exports/iot_export_linkkit.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2448">
+              <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/linkkit/dm/dm_cota.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2128">
+              <caret line="133" column="33" selection-start-line="133" selection-start-column="33" selection-end-line="133" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/linkkit/dm/dm_api.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7984">
+              <caret line="499" column="4" selection-start-line="499" selection-start-column="4" selection-end-line="499" selection-end-column="4" />
+              <folding>
+                <element signature="e#11422#11432#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/linkkit/dm/dm_manager.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23760">
+              <caret line="1485" column="4" selection-start-line="1485" selection-start-column="4" selection-end-line="1485" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>MQTTSerialize_subscribeLength</find>
+      <find>_alloc_send_buffer</find>
+      <find>lock_read_buf</find>
+      <find>iotx_mc_read_packet</find>
+      <find>c</find>
+      <find>_mqtt_yield</find>
+      <find>IOT_MQTT_Publish</find>
+      <find>nb_want</find>
+      <find>mbedtls_ssl_fetch_input</find>
+      <find>select</find>
+      <find>iotx_ioctl_option_t</find>
+      <find>LINKKIT_SDK_C_VERSION_LV_DEFINES</find>
+      <find>LINKKIT_VERSION</find>
+      <find>LINKKIT_SDK_C_VERSION</find>
+      <find>_reset_recv_buffer</find>
+      <find>IOT_MQTT_Yield</find>
+      <find>iotx_cm_open_mqtt</find>
+      <find>_set_common_handlers</find>
+      <find>iotx_cm_open</find>
+      <find>IOT_Linkkit_Query</find>
+      <find>output_len</find>
+      <find>buf_len</find>
+      <find>md5</find>
+      <find>httpclient_recv_response</find>
+      <find>is_more</find>
+      <find>new_trf_len</find>
+      <find>utils_network_t</find>
+      <find>tx</find>
+      <find>ota</find>
+      <find>send</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/infra/system/event.c" />
+        <option value="$PROJECT_DIR$/src/board/config.ubuntu.x86" />
+        <option value="$PROJECT_DIR$/src/ref-impl/hal/ssl/mbedtls/HAL_TLS_mbedtls.c" />
+        <option value="$PROJECT_DIR$/include/iot_export.h" />
+        <option value="$PROJECT_DIR$/src/sdk-impl/sdk-impl.c" />
+        <option value="$PROJECT_DIR$/src/protocol/mqtt/client/mqtt_client.c" />
+        <option value="$PROJECT_DIR$/src/infra/utils/misc/utils_httpc.c" />
+        <option value="$PROJECT_DIR$/examples/iot.mk" />
+        <option value="$PROJECT_DIR$/src/sdk-impl/impl_linkkit.c" />
+        <option value="$PROJECT_DIR$/src/services/linkkit/dm/client/dm_client.c" />
+      </list>
+    </option>
+  </component>
+  <component name="OCFindUsagesOptions" text="false" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="308" />
+    <option name="y" value="-877" />
+    <option name="width" value="1385" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="iotkit-embedded-V2.3.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="linkkit-sdk-c" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iotkit-embedded-V2.3.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="linkkit-sdk-c" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iotkit-embedded-V2.3.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="linkkit-sdk-c" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sdk-impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="CMake Application.linkkit-example-solo">
+    <configuration name="iot_awss" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="iot_awss" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iot_bind" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="iot_bind" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iot_cm" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="iot_cm" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iot_coap_local" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="iot_coap_local" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iot_dm" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="iot_dm" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iot_hal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="iot_hal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iot_log" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="iot_log" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iot_mqtt" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="iot_mqtt" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iot_ota" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="iot_ota" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iot_reset" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="iot_reset" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iot_sdk" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="iot_sdk" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iot_system" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="iot_system" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iot_tls" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="iot_tls" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iot_utils" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="iot_utils" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="linkkit-example-cota" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="linkkit-example-cota" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="iotkit-embedded-V2.3.0" RUN_TARGET_NAME="linkkit-example-cota">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="linkkit-example-countdown" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="linkkit-example-countdown" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="iotkit-embedded-V2.3.0" RUN_TARGET_NAME="linkkit-example-countdown">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="linkkit-example-sched" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="linkkit-example-sched" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="iotkit-embedded-V2.3.0" RUN_TARGET_NAME="linkkit-example-sched">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="linkkit-example-solo" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="linkkit-example-solo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="iotkit-embedded-V2.3.0" RUN_TARGET_NAME="linkkit-example-solo">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mqtt-example-multithread" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="mqtt-example-multithread" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="iotkit-embedded-V2.3.0" RUN_TARGET_NAME="mqtt-example-multithread">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mqtt-example-rrpc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="mqtt-example-rrpc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="iotkit-embedded-V2.3.0" RUN_TARGET_NAME="mqtt-example-rrpc">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mqtt-example" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="mqtt-example" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="iotkit-embedded-V2.3.0" RUN_TARGET_NAME="mqtt-example">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ota-example-mqtt" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="ota-example-mqtt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="iotkit-embedded-V2.3.0" RUN_TARGET_NAME="ota-example-mqtt">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sdk_impl" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iotkit-embedded-V2.3.0" TARGET_NAME="sdk_impl" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.iot_awss" />
+      <item itemvalue="CMake Application.iot_bind" />
+      <item itemvalue="CMake Application.iot_cm" />
+      <item itemvalue="CMake Application.iot_coap_local" />
+      <item itemvalue="CMake Application.iot_dm" />
+      <item itemvalue="CMake Application.iot_hal" />
+      <item itemvalue="CMake Application.iot_log" />
+      <item itemvalue="CMake Application.iot_mqtt" />
+      <item itemvalue="CMake Application.iot_ota" />
+      <item itemvalue="CMake Application.iot_reset" />
+      <item itemvalue="CMake Application.iot_sdk" />
+      <item itemvalue="CMake Application.iot_system" />
+      <item itemvalue="CMake Application.iot_tls" />
+      <item itemvalue="CMake Application.iot_utils" />
+      <item itemvalue="CMake Application.linkkit-example-cota" />
+      <item itemvalue="CMake Application.linkkit-example-countdown" />
+      <item itemvalue="CMake Application.linkkit-example-sched" />
+      <item itemvalue="CMake Application.linkkit-example-solo" />
+      <item itemvalue="CMake Application.mqtt-example-multithread" />
+      <item itemvalue="CMake Application.mqtt-example-rrpc" />
+      <item itemvalue="CMake Application.mqtt-example" />
+      <item itemvalue="CMake Application.ota-example-mqtt" />
+      <item itemvalue="CMake Application.sdk_impl" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04e603e6-5b4f-495d-af42-946de5cbaf2e" name="Default Changelist" comment="" />
+      <created>1564477138780</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564477138780</updated>
+      <workItem from="1564477140061" duration="295000" />
+      <workItem from="1564479338801" duration="588000" />
+      <workItem from="1566375667822" duration="4116000" />
+      <workItem from="1566476130270" duration="677000" />
+      <workItem from="1567650918650" duration="2174000" />
+      <workItem from="1570849784298" duration="2467000" />
+      <workItem from="1575338572267" duration="8648000" />
+      <workItem from="1575358468239" duration="566000" />
+      <workItem from="1575459057044" duration="474000" />
+      <workItem from="1575463540467" duration="734000" />
+      <workItem from="1575526262718" duration="1756000" />
+      <workItem from="1575531743498" duration="2684000" />
+      <workItem from="1575598748786" duration="3904000" />
+      <workItem from="1575949699649" duration="1386000" />
+      <workItem from="1575959766368" duration="142000" />
+      <workItem from="1575963346905" duration="1137000" />
+      <workItem from="1575994543582" duration="1476000" />
+      <workItem from="1578290821303" duration="1100000" />
+      <workItem from="1578308743966" duration="684000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="35008000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-227" y="-1057" width="1920" height="1057" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17217484" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Run" order="1" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Tail" order="6" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.78238344" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.7419689" />
+      <window_info anchor="bottom" id="CMake" order="10" weight="0.6072539" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32953367" />
+      <window_info anchor="right" id="Key Promoter X" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Find" order="4" visible="true" weight="0.26651818" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ref-impl/tls/library/ssl_tls.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89856">
+          <caret line="5616" column="21" selection-start-line="5616" selection-end-line="5617" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ref-impl/hal/ssl/mbedtls/HAL_TLS_mbedtls.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3232">
+          <caret line="202" column="29" selection-start-line="202" selection-start-column="29" selection-end-line="202" selection-end-column="29" />
+          <folding>
+            <element signature="e#31156#32516#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ref-impl/tls/include/mbedtls/ssl_internal.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5488">
+          <caret line="343" column="31" selection-start-line="343" selection-start-column="31" selection-end-line="343" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ref-impl/tls/include/mbedtls/ssl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12432">
+          <caret line="777" column="30" selection-start-line="777" selection-start-column="24" selection-end-line="777" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/protocol/mqtt/MQTTPacket/MQTTPacket.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infra/utils/misc/utils_timer.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ref-impl/tls/library/net_sockets.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5440">
+          <caret line="340" column="48" selection-start-line="340" selection-start-column="48" selection-end-line="340" selection-end-column="48" />
+          <folding>
+            <element signature="e#12301#12391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/iot_import.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4480">
+          <caret line="280" column="31" selection-start-line="280" selection-start-column="31" selection-end-line="280" selection-end-column="31" />
+          <folding>
+            <element signature="e#175#355#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/iot_export.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2064">
+          <caret line="129" column="24" selection-start-line="129" selection-end-line="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/secure/_string.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sdk-impl/sdk-impl_internal.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/protocol/mqtt/iotx_mqtt.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
+          <folding>
+            <element signature="e#3886#4123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infra/utils/misc/compat_aos_list.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/linkkit/cm/iotx_cm_internal.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/linkkit/cm/include/iotx_cm.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="101" column="25" lean-forward="true" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/linkkit/dm/client/dm_client_adapter.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/linkkit/cm/iotx_cm_mqtt.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/linkkit/cm/iotx_cm.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+          <folding>
+            <element signature="e#1194#1233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/awss/awss.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="58" column="26" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/dev_bind/awss_bind.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infra/system/event.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/dev_bind/awss_cmp_mqtt.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/dev_bind/awss_report.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="761">
+          <caret line="357" column="23" selection-start-line="357" selection-start-column="23" selection-end-line="357" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/ota/iotx_ota.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/ota/ota_example_mqtt.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="217" column="22" selection-start-line="217" selection-start-column="22" selection-end-line="217" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/linkkit/linkkit_example_cota.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/ota/impl/ota_fetch.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="992">
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/ota/iotx_ota.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11264">
+          <caret line="704" column="44" selection-start-line="704" selection-start-column="44" selection-end-line="704" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ref-impl/hal/os/macos/HAL_OS_MacOS.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/ota/impl/ota_lib.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infra/utils/misc/utils_httpc.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="733" column="34" lean-forward="true" selection-start-line="733" selection-start-column="34" selection-end-line="733" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infra/utils/misc/utils_net.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3904">
+          <caret line="244" column="4" selection-start-line="244" selection-start-column="4" selection-end-line="244" selection-end-column="4" />
+          <folding>
+            <element signature="e#3661#3849#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infra/utils/misc/utils_httpc.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infra/log/iotx_log.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/imports/iot_import_config.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/protocol/mqtt/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ref-impl/hal/os/macos/HAL_TCP_MacOS.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3264">
+          <caret line="204" selection-start-line="204" selection-end-line="204" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ref-impl/hal/os/win7/HAL_TCP_win7.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1808">
+          <caret line="113" column="22" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/protocol/mqtt/client/mqtt_client.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="1152" column="28" lean-forward="true" selection-start-line="1152" selection-start-column="28" selection-end-line="1152" selection-end-column="28" />
+          <folding>
+            <element signature="e#1938#3956#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infra/utils/misc/utils_net.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/protocol/mqtt/MQTTPacket/MQTTConnectClient.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/protocol/mqtt/MQTTPacket/MQTTConnect.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1824">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ref-impl/hal/os/ubuntu/ieee80211_radiotap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/exports/iot_export_linkkit.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/linkkit/dm/dm_cota.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2128">
+          <caret line="133" column="33" selection-start-line="133" selection-start-column="33" selection-end-line="133" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/linkkit/dm/dm_api.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7984">
+          <caret line="499" column="4" selection-start-line="499" selection-start-column="4" selection-end-line="499" selection-end-column="4" />
+          <folding>
+            <element signature="e#11422#11432#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/linkkit/dm/dm_manager.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23760">
+          <caret line="1485" column="4" selection-start-line="1485" selection-start-column="4" selection-end-line="1485" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/iot.mk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="73" column="66" lean-forward="true" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sdk-impl/sdk-impl.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3392">
+          <caret line="218" column="34" selection-start-line="218" selection-start-column="34" selection-end-line="218" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sdk-impl/impl_linkkit.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/linkkit/dm/client/dm_client.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
